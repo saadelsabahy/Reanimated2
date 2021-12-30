@@ -8,6 +8,7 @@ import OnBoarding from './src/lessons/OnBoarding';
 import PanGestureBasics from './src/lessons/PanGestureBasics';
 import PanGestureOnBoarding from './src/lessons/PangestureOnBoarding';
 import PinchImage from './src/lessons/PinchImage';
+import ProgressBar from './src/lessons/ProgressBar';
 import Theme from './src/lessons/Theme';
 
 export default function App() {
@@ -20,7 +21,8 @@ export default function App() {
 			{/* <PinchImage /> */}
 			{/* <InstagramPost /> */}
 			{/* <PanGestureOnBoarding /> */}
-			<ColorPicker />
+			{/* <ColorPicker /> */}
+			<ProgressBar />
 			<StatusBar style='auto' />
 		</GestureHandlerRootView>
 	);
