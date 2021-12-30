@@ -5,6 +5,7 @@ import Basics from './src/lessons/Basics';
 import InstagramPost from './src/lessons/InstagramPost';
 import OnBoarding from './src/lessons/OnBoarding';
 import PanGestureBasics from './src/lessons/PanGestureBasics';
+import PanGestureOnBoarding from './src/lessons/PangestureOnBoarding';
 import PinchImage from './src/lessons/PinchImage';
 import Theme from './src/lessons/Theme';
 
@@ -16,7 +17,8 @@ export default function App() {
 			{/* <OnBoarding /> */}
 			{/* <Theme /> */}
 			{/* <PinchImage /> */}
-			<InstagramPost />
+			{/* <InstagramPost /> */}
+			<PanGestureOnBoarding />
 			<StatusBar style='auto' />
 		</GestureHandlerRootView>
 	);
