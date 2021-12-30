@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Basics from './src/lessons/Basics';
+import ColorPicker from './src/lessons/ColorPicker';
 import InstagramPost from './src/lessons/InstagramPost';
 import OnBoarding from './src/lessons/OnBoarding';
 import PanGestureBasics from './src/lessons/PanGestureBasics';
@@ -18,7 +19,8 @@ export default function App() {
 			{/* <Theme /> */}
 			{/* <PinchImage /> */}
 			{/* <InstagramPost /> */}
-			<PanGestureOnBoarding />
+			{/* <PanGestureOnBoarding /> */}
+			<ColorPicker />
 			<StatusBar style='auto' />
 		</GestureHandlerRootView>
 	);

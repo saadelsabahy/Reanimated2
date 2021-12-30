@@ -5,11 +5,13 @@ import {
 	PanGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
 import Animated, {
+	cancelAnimation,
 	useAnimatedGestureHandler,
 	useDerivedValue,
 	useSharedValue,
 	withDecay,
 } from 'react-native-reanimated';
+import { CIRCLE_SIZE } from '../ColorPicker';
 import PanPage, { PAGE_WIDTH } from './PanPage';
 
 interface Props {}
@@ -17,7 +19,7 @@ type ContextType = {
 	translateX: number;
 };
 const TEXT = ['hello', 'react', 'native', 'developers'];
-const LAST_PAGE_OFFSET = PAGE_WIDTH * (TEXT.length - 1);
+const LAST_PAGE_OFFSET = PAGE_WIDTH - CIRCLE_SIZE;
 const PanGestureOnBoarding = (props: Props) => {
 	const translateX = useSharedValue(0);
 
@@ -30,6 +32,7 @@ const PanGestureOnBoarding = (props: Props) => {
 	>({
 		onStart: (_, context) => {
 			context.translateX = clampedTranslateX.value;
+			cancelAnimation(translateX);
 		},
 		onActive: (e, context) => {
 			translateX.value = e.translationX + context.translateX;
