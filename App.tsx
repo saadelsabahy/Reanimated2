@@ -9,6 +9,7 @@ import PanGestureBasics from './src/lessons/PanGestureBasics';
 import PanGestureOnBoarding from './src/lessons/PangestureOnBoarding';
 import PinchImage from './src/lessons/PinchImage';
 import ProgressBar from './src/lessons/ProgressBar';
+import RippleOnPress from './src/lessons/RippleEffect';
 import SwipeToRemove from './src/lessons/SwipeToRemove';
 import Theme from './src/lessons/Theme';
 
@@ -24,7 +25,8 @@ export default function App() {
 			{/* <PanGestureOnBoarding /> */}
 			{/* <ColorPicker /> */}
 			{/* <ProgressBar /> */}
-			<SwipeToRemove />
+			{/* <SwipeToRemove /> */}
+			<RippleOnPress />
 			<StatusBar style='auto' />
 		</GestureHandlerRootView>
 	);
